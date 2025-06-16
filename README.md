@@ -1,79 +1,75 @@
-# SysDoa - Documents
+# SysDoa
 
-Repositório que representa a documentação do SysDoa.
+É notório que o controle de candidatos à doação de sangue é fundamental para garantir um estoque seguro e suficiente nos bancos de sangue. Atualmente, a coleta e análise desses dados são feitas de forma manual, dificultando a identificação rápida de doadores aptos e a organização das doações. Neste contexto, propõe-se o desenvolvimento do SysDoa, um sistema móvel que permite não só uma gestão virtual de candidatos de uma agência de banco de sangue, como também possibilita análises estatísticas das informações coletadas.
 
-## Padrões de diretórios
+## Escopo
 
-Cada ciclo de um Produto mínimo viável (Minimum viable product - MVP) terá um prórpio diretorio como forma de pacote, no qual terá diretórios de:
-- Descoberta: Tudo que serve de base levantamentos do sistema, como tipos de dados coletados de um documento, formulários de pesquisa, contexto, slides de workshops, ata e etc.
-- Requisitos: são analisados e definidos. Nele terá os diretórios de requisitos funcionais, não funcionais e prd.
-- Diagramas: são os diagramas resultantes dos requisitos, como diagrama de caso de uso, diagrama de classe e etc.
+Neste momento, o sistema SysDoa será desenvolvido exclusivamente para atender uma clínica específica. Por isso, algumas funcionalidades serão deliberadamente excluídas desta versão inicial, como:
 
-O modelo fica mais ou menos assim:
+- Cadastro individual de candidatos;
+- Edição e exclusão de registros;
+- Funcionalidades de login e registro de usuários.
 
-Documents
-    - MVP-01
-        - descobertas
-        - requisitos
-            - funcionais
-            - nao-funcionais
-            - prd
-        - diagramas
-    - MVP-02
-        - descobertas
-        - requisitos
-            - funcionais
-            - nao-funcionais
-            - prd
-        - diagramas
-    - MVP-03
-        - descobertas
-        - requisitos
-            - funcionais
-            - nao-funcionais
-            - prd
-        - diagramas
+Por outro lado, o sistema contará com: 
 
-## Padrões de nomeclatura dos artefatos
+- Cadastro de candidatos por lote via upload de arquivos jsons;
+- Listagem de possíveis doadores de sangue;
+- Informações estatísticas de quantos candidatos existem em cada estado do Brasil;
+- Informações estatísticas do IMC médio em cada faixa de idade de dez em dez anos;
+- Informações estatísticas do percentual de obesos entre os homens e entre as mulheres;
+- Informações estatísticas da média de idade para cada tipo sanguíneo;
+- Informações estatísticas da quantidade de possíveis doadores para cada tipo sanguíneo receptor.
 
-- Diretórios: 
-    - Sempre em minusculo, separados por hífem em vez de espaços e sem pontuação
-- Requisitos:
-    - Markdown, ou seja, com final .md
-    - Sempre em letra maiuscula
-    - Requisitos funcionais: prefixo RF com o número de identificação logo após, como RF01
-    - Requisitos não funcionais: prefixos RNF com o número de identificação logo após, como RNF01
-- Descobertas:
-    - Sempre em letra maiuscula, separada com hífem em vez de espaços e sem pontuação, como LISTA-DE-CANDIDATOS.json
-- Diagramas:
-    - Sempre em letra maiuscula, separada com hífem em vez de espaços e sem pontuação, como DIAGRAMA-DE-CASO-DE-USO.png
+## Padrão de Diretórios dos Artefatos
 
-## Padrões de artefatos dos requisitos
+O projeto segue uma estrutura clara de pastas para ajudar na manutenção e colaboração em equipe. Dessa forma, para nortear a organização dos artefatos de requisitos do produto, adotou-se a seguinte hierarquia de diretórios:
 
-### Requisitos funcionais
+documents  
+&nbsp;&nbsp;&nbsp;&nbsp;↳ requisitos  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ funcionais  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ nao-funcionais
 
-Devem ter:
+Essa separação permite localizar rapidamente os arquivos e manter a rastreabilidade entre os tipos de requisito.
 
-- Identificador 
-- Caso de uso
-- Descrição
-- Prioridade
-- Dependências
-- Cardinalidades
-- Tabela de Dados
-    - Nome	
-    - Tipo	
-    - Valor Obrigatório
-    - Restrições
-- Observações Extras
+## Padrão de Nomenclatura dos Artefatos
 
-### Requisitos não funcionais
+Para padronizar nomes, evitar confusões e facilitar buscas, foi adotado o seguinte padrão de nomeclatura dos artefatos:
 
-Devem ter:
+- **Diretórios**: em minúsculas, sem pontuações e separados por hífem em vez de espaços; 
 
-- Identificador
-- Descrição
-- Prioridade
-- Categoria
-- Observações Extras
+- **Requisitos**: em Markdown (.md) e nomeados com letras maiúsculas para destaque, além de iniciar com o prefixo **RF** para requisitos funcionais e **RNF** para requisitos não funcionais, sempre fornecendo o número de identificação posteriormente.
+
+## Padrão de Artefato de Requisitos
+
+Para garantir rastreabilidade e facilitar a validação dos requisitos ao longo do projeto, será adotado um modelo padronizado. Veja a seguir as regras de padronização dos requistos funcionais e não funcionais:
+
+- **Requisitos funcionais** incluirão campos como caso de uso, fluxos, atores e tabelas de dados, permitindo compreender claramente o comportamento esperado do sistema. Dessa forma, o modelo definido deve conter os campos conforme a ordem seguinte:
+
+    - Identificador
+    - Caso de Uso
+    - Descrição
+    - Prioridade
+    - Atores
+    - Pré-condições
+    - Pós-condições
+    - Fluxos Principais
+    - Fluxos Alternativos
+    - Fluxos de Exceções
+    - Dependências
+    - Cardinalidades
+    - Tabelas de Dados
+        - Nome
+        - Tipo
+        - Valor Obrigatório
+        - Restrições
+    - Observações Extras
+
+- **Requisitos não funcionais** terão estrutura simples com identificador, prioridade e categoria, focando em restrições e qualidades do sistema. Dessa forma, o modelo definido deve conter os campos conforme a ordem seguinte:
+
+    - Identificador
+    - Descrição
+    - Prioridade
+    - Categoria
+    - Observações Extras
+
 
