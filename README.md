@@ -86,7 +86,31 @@ Para garantir rastreabilidade e facilitar a validação dos requisitos ao longo 
         - **Ambiental:** adaptação ao ambiente físico.
     - **Observações Extras:** informações adicionais relevantes que não se enquadram nos campos anteriores.
 
-## Estrutura Padrão das Issues
+## Processo de Desenvolvimento de Artefatos de Requisitos
+
+O processo de desenvolvimento de artefatos de requisitos estabelece as fases em que os requisitos do sistema são criados, revisados e atualizados ao longo do projeto. Essa definição garante a rastreabilidade e alinhamento contínuo entre as necessidades do sistema e sua implementação. Veja na tabela baixo mais detalhes de cada fase aplicada.
+
+| **Fase** | **Descrição** | **Momento** |**Resultados** | **Rastreabilidade** |
+|----------|---------------|-------------|---------------|---------------------|
+| Criação | Documentação inicial dos requisitos do sistema com base no levantamento com stakeholders | Início de cada interação do projeto | requisitos funcionais e não funcionais criados com padrão definido | Sempre referenciando o commit com o prefixo feat e a identificação do requisito. Exemplos: "feat (RFxx): ...", "feat (RNFxx): ..." | 
+| Revisão | Correção de erros ou ambiguidades nos requisitos existentes | Após testes, validações ou feedbacks internos | Ajustes nos textos ou regras dos requisitos |  Sempre referenciando o commit com o prefixo fix e a identificação do requisito. Exemplos: "fix (RFxx): ...", "fix (RNFxx): ..." | 
+| Atualização | Modificações nos requisitos para refletir novas funcionalidades, melhorias ou mudanças externas | A cada nova demanda ou mudança de escopo | Versões novas dos requisitos funcionais ou não funcionais | Sempre referenciando o commit com o prefixo refactor e a identificação do requisito. Exemplos: "refactor (RFxx): ...", "refactor (RNFxx): ..." | 
+
+## Atividades 
+
+A classificação das atividades é essencial para garantir o controle e a rastreabilidade das mudanças realizadas ao longo do desenvolvimento do sistema. Cada tarefa é categorizada conforme o tipo de evolução aplicada no código-fonte (evolutiva, corretiva ou adaptativa) e documentada através de issues e commits padronizados. Com isso, essa abordagem permite manter o alinhamento entre os requisitos e o software entregue, promovendo a qualidade e a transparência no ciclo de vida do projeto.
+
+### Classificação das Atividade Conforme a Evolução de Código
+
+Cada atividade do projeto é classificada conforme sua natureza, o que ajuda a identificar o tipo de evolução do sistema e manter a rastreabilidade com os requisitos. Os tipos são:
+
+| **Tipo de Evolução** | **Descrição** | **Momento** |**Prefixo do Commit Inicial** | **Rastreabilidade** |
+|----------------------|---------------|-------------|------------------------------|---------------------|
+| Evolutiva | Adiciona funcionalidades novas ou melhorias planejadas | Quando a funcionalidade já estava prevista na interação | feat | Sempre referenciando o commit com o prefixo feat e a identificação da issue. Exemplo: "feat #01: ..." | 
+| Corretiva | Corrige erros, falhas de lógica ou validações que impedem o funcionamento adequado | Quando é necessário consertar algo que foi implementado incorretamente ou contém bug | fix | Sempre referenciando o commit com o prefixo fix e a identificação da issue. Exemplo: "fix #02: ..."| 
+| Adaptativa | Altera o sistema para se adaptar a mudanças externas | Quando há necessidade de ajustes técnicos que não alteram a lógica funcional | refactor | Sempre referenciando o commit com o prefixo refactor e a identificação da issue. Exemplo: "refactor #03: ..." | 
+
+### Estrutura Padrão das Atividades/Issues
 
 As issues são usadas para planejar, distribuir e acompanhar as atividades do projeto. Elas estão localizadas no **[_Project (projeto)_](https://github.com/orgs/SysDoa/projects/1/views/1)** desta organização e cada uma deve conter informações completas para garantir entendimento e rastreabilidade. Neste contexto, o modelo adotado de issue/atividade segue o consecutivo padrão abaixo:
 
@@ -112,23 +136,3 @@ As issues são usadas para planejar, distribuir e acompanhar as atividades do pr
 - **Data de Início (Start Date) e Data de Fim (End Date):** para controle de tempo real de execução.
 - **Interação (Iteration):** a qual sprint/interação a tarefa pertence (deve durar entre 15 a 30 dias).
 - **Responsável (Assignees):** membro(s) atribuídos para executar a tarefa.
-
-## Processo de Desenvolvimento de Artefatos de Requisitos
-
-O processo de desenvolvimento de artefatos de requisitos estabelece as fases em que os requisitos do sistema são criados, revisados e atualizados ao longo do projeto. Essa definição garante a rastreabilidade e alinhamento contínuo entre as necessidades do sistema e sua implementação. Veja na tabela baixo mais detalhes de cada fase aplicada.
-
-| **Fase** | **Descrição** | **Momento** |**Resultados** | **Rastreabilidade** |
-|----------|---------------|-------------|---------------|---------------------|
-| Criação | Documentação inicial dos requisitos do sistema com base no levantamento com stakeholders | Início de cada interação do projeto | requisitos funcionais e não funcionais criados com padrão definido | Sempre referenciando o commit com o prefixo feat e a identificação do requisito. Exemplos: "feat (RFxx): ...", "feat (RNFxx): ..." | 
-| Revisão | Correção de erros ou ambiguidades nos requisitos existentes | Após testes, validações ou feedbacks internos | Ajustes nos textos ou regras dos requisitos |  Sempre referenciando o commit com o prefixo fix e a identificação do requisito. Exemplos: "fix (RFxx): ...", "fix (RNFxx): ..." | 
-| Atualização | Modificações nos requisitos para refletir novas funcionalidades, melhorias ou mudanças externas | A cada nova demanda ou mudança de escopo | Versões novas dos requisitos funcionais ou não funcionais | Sempre referenciando o commit com o prefixo refactor e a identificação do requisito. Exemplos: "refactor (RFxx): ...", "refactor (RNFxx): ..." | 
-
-## Classificação das Atividades (Tipo de Evolução e Commits)
-
-Cada atividade do projeto é classificada conforme sua natureza, o que ajuda a identificar o tipo de evolução do sistema e manter a rastreabilidade com os requisitos. Os tipos são:
-
-| **Tipo de Evolução** | **Descrição** | **Momento** |**Prefixo do Commit Inicial** | **Rastreabilidade** |
-|----------------------|---------------|-------------|------------------------------|---------------------|
-| Evolutiva | Adiciona funcionalidades novas ou melhorias planejadas | Quando a funcionalidade já estava prevista na interação | feat | Sempre referenciando o commit com o prefixo feat e a identificação da issue. Exemplo: "feat #01: ..." | 
-| Corretiva | Corrige erros, falhas de lógica ou validações que impedem o funcionamento adequado | Quando é necessário consertar algo que foi implementado incorretamente ou contém bug | fix | Sempre referenciando o commit com o prefixo fix e a identificação da issue. Exemplo: "fix #02: ..."| 
-| Adaptativa | Altera o sistema para se adaptar a mudanças externas | Quando há necessidade de ajustes técnicos que não alteram a lógica funcional | refactor | Sempre referenciando o commit com o prefixo refactor e a identificação da issue. Exemplo: "refactor #03: ..." | 
