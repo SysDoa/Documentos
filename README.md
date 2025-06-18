@@ -104,7 +104,7 @@ As atividades representam as tarefas realizadas durante o desenvolvimento do sis
 
 Cada atividade do projeto é classificada conforme sua natureza, o que ajuda a identificar o tipo de evolução do sistema e manter a rastreabilidade com os requisitos. Os tipos são:
 
-| **Tipo de Evolução** | **Descrição** | **Momento** |**Prefixo do Commit Inicial** | **Rastreabilidade** |
+| **Tipo de Evolução** | **Descrição** | **Momento** |**Prefixo do Commit** | **Rastreabilidade** |
 |----------------------|---------------|-------------|------------------------------|---------------------|
 | Evolutiva | Adiciona funcionalidades novas ou melhorias planejadas | Quando a funcionalidade já estava prevista na interação | feat | Sempre referenciando o commit com o prefixo feat e a identificação da issue. Exemplo: "feat #01: ..." | 
 | Corretiva | Corrige erros, falhas de lógica ou validações que impedem o funcionamento adequado | Quando é necessário consertar algo que foi implementado incorretamente ou contém bug | fix | Sempre referenciando o commit com o prefixo fix e a identificação da issue. Exemplo: "fix #02: ..."| 
