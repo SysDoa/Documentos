@@ -121,5 +121,14 @@ O processo de desenvolvimento de artefatos de requisitos estabelece as fases em 
 |----------|---------------|-------------|---------------|---------------------|
 | Criação | Documentação inicial dos requisitos do sistema com base no levantamento com stakeholders | Início de cada interação do projeto | requisitos funcionais e não funcionais criados com padrão definido | Sempre referenciando o commit com o prefixo feat e a identificação do requisito. Exemplos: "feat (RFxx): ...", "feat (RNFxx): ..." | 
 | Revisão | Correção de erros ou ambiguidades nos requisitos existentes | Após testes, validações ou feedbacks internos | Ajustes nos textos ou regras dos requisitos |  Sempre referenciando o commit com o prefixo fix e a identificação do requisito. Exemplos: "fix (RFxx): ...", "fix (RNFxx): ..." | 
-| Atualização | Modificações nos requisitos para refletir novas funcionalidades, melhorias ou mudanças externas | A cada nova demanda ou mudança de escopo | Versões novas dos requisitos funcionais ou não funcionais | Sempre referenciando o commit com o prefixo refactore e a identificação do requisito. Exemplos: "refactor (RFxx): ...", "refactor (RNFxx): ..." | 
+| Atualização | Modificações nos requisitos para refletir novas funcionalidades, melhorias ou mudanças externas | A cada nova demanda ou mudança de escopo | Versões novas dos requisitos funcionais ou não funcionais | Sempre referenciando o commit com o prefixo refactor e a identificação do requisito. Exemplos: "refactor (RFxx): ...", "refactor (RNFxx): ..." | 
 
+## Classificação das Atividades (Tipo de Evolução e Commits)
+
+Cada atividade do projeto é classificada conforme sua natureza, o que ajuda a identificar o tipo de evolução do sistema e manter a rastreabilidade com os requisitos. Os tipos são:
+
+| **Tipo de Evolução** | **Descrição** | **Momento** |**Prefixo do Commit Inicial** | **Rastreabilidade** |
+|----------------------|---------------|-------------|------------------------------|---------------------|
+| Evolutiva | Adiciona funcionalidades novas ou melhorias planejadas | Quando a funcionalidade já estava prevista na interação | feat | Sempre referenciando o commit com o prefixo feat e a identificação da issue. Exemplo: "feat #01: ..." | 
+| Corretiva | Corrige erros, falhas de lógica ou validações que impedem o funcionamento adequado | Quando é necessário consertar algo que foi implementado incorretamente ou contém bug | fix | Sempre referenciando o commit com o prefixo fix e a identificação da issue. Exemplo: "fix #02: ..."| 
+| Adaptativa | Altera o sistema para se adaptar a mudanças externas | Quando há necessidade de ajustes técnicos que não alteram a lógica funcional | refactor | Sempre referenciando o commit com o prefixo refactor e a identificação da issue. Exemplo: "refactor #03: ..." | 
