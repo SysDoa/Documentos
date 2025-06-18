@@ -66,7 +66,9 @@ Para garantir rastreabilidade e facilitar a validação dos requisitos ao longo 
         - **Tipo:** tipo de dado;
         - **Valor Obrigatório:** se o campo é ou não obrigatório ser preenchido;
         - **Restrições:** validações ou limitações; 
-    - **Observações Extras:** informações adicionais relevantes que não se enquadram nos campos anteriores.
+    - **Observações Extras:** informações adicionais relevantes que não se enquadram nos campos anteriores;
+    - **Histórico de Alterações:** registro de implementações, atualizações ou correções com **Alteração**, **Motivo** e **Data**.
+
 
 - **Requisitos não funcionais** terão estrutura simples com identificador, prioridade e categoria, focando em restrições e qualidades do sistema. Dessa forma, o modelo definido deve conter os campos conforme a ordem seguinte:
 
@@ -84,7 +86,8 @@ Para garantir rastreabilidade e facilitar a validação dos requisitos ao longo 
         - **Desempenho:** tempo de resposta adequado;
         - **Conformidade:** atendimento a normas legais;
         - **Ambiental:** adaptação ao ambiente físico.
-    - **Observações Extras:** informações adicionais relevantes que não se enquadram nos campos anteriores.
+    - **Observações Extras:** informações adicionais relevantes que não se enquadram nos campos anteriores;
+    - **Histórico de Alterações:** registro de implementações, atualizações ou correções com **Alteração**, **Motivo** e **Data**.
 
 ## Processo de Desenvolvimento de Artefatos de Requisitos
 
@@ -92,9 +95,9 @@ O processo de desenvolvimento de artefatos de requisitos estabelece as fases em 
 
 | **Fase** | **Descrição** | **Momento** |**Resultados** | **Rastreabilidade** |
 |----------|---------------|-------------|---------------|---------------------|
-| Criação | Documentação inicial dos requisitos do sistema com base no levantamento com stakeholders | Início de cada interação do projeto | requisitos funcionais e não funcionais criados com padrão definido | Sempre referenciando o commit com o prefixo feat e a identificação do requisito. Exemplos: "feat (RFxx): ...", "feat (RNFxx): ..." | 
-| Revisão | Correção de erros ou ambiguidades nos requisitos existentes | Após testes, validações ou feedbacks internos | Ajustes nos textos ou regras dos requisitos |  Sempre referenciando o commit com o prefixo fix e a identificação do requisito. Exemplos: "fix (RFxx): ...", "fix (RNFxx): ..." | 
-| Atualização | Modificações nos requisitos para refletir novas funcionalidades, melhorias ou mudanças externas | A cada nova demanda ou mudança de escopo | Versões novas dos requisitos funcionais ou não funcionais | Sempre referenciando o commit com o prefixo refactor e a identificação do requisito. Exemplos: "refactor (RFxx): ...", "refactor (RNFxx): ..." | 
+| Criação | Documentação inicial dos requisitos do sistema com base no levantamento com stakeholders | Início de cada interação do projeto | requisitos funcionais e não funcionais criados com padrão definido | Sempre referenciando o commit com o prefixo feat e a identificação do requisito. Exemplos: "feat (RFxxx): ...", "feat (RNFxxx): ..." | 
+| Revisão | Correção de erros ou ambiguidades nos requisitos existentes | Após testes, validações ou feedbacks internos | Ajustes nos textos ou regras dos requisitos |  Sempre referenciando o commit com o prefixo fix e a identificação do requisito. Exemplos: "fix (RFxxx): ...", "fix (RNFxxx): ..." | 
+| Atualização | Modificações nos requisitos para refletir novas funcionalidades, melhorias ou mudanças externas | A cada nova demanda ou mudança de escopo | Versões novas dos requisitos funcionais ou não funcionais | Sempre referenciando o commit com o prefixo refactor e a identificação do requisito. Exemplos: "refactor (RFxxx): ...", "refactor (RNFxxx): ..." | 
 
 ## Atividades 
 
