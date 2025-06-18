@@ -139,3 +139,16 @@ As issues são usadas para planejar, distribuir e acompanhar as atividades do pr
 - **Data de Início (Start Date) e Data de Fim (End Date):** para controle de tempo real de execução.
 - **Interação (Iteration):** a qual sprint/interação a tarefa pertence (deve durar entre 15 a 30 dias).
 - **Responsável (Assignees):** membro(s) atribuídos para executar a tarefa.
+
+## Mecanismos de Garantia das Atividades e Rastreabilidade
+
+Para assegurar que toda atividade esteja corretamente vinculada aos requisitos e devidamente classificada conforme a natureza da evolução, adotamos os seguintes mecanismos:
+
+- **Uso obrigatório de issues no GitHub:** nenhuma alteração no código é feita sem uma issue correspondente, a qual deve referenciar claramente os requisitos envolvidos (RF e/ou RNF);
+- **Commits padronizados:** todos os commits seguem o padrão de prefixo (feat, fix, refactor) e referenciam o número da issue;
+- **Checklist de Pull Requests:** Toda PR (pull request) deve conter:
+    - **Link para a issue correspondente;**
+    - **Descrição do requisito atendido;**
+    - **Tipo de evolução realizada;**
+- **Revisão de código obrigatória:** antes da aprovação de qualquer PR, um membro do grupo verifica se a atividade está relacionada a um requisito documentado e classificada corretamente;
+- **Versionamento dos requisitos:** a cada mudança significativa em um requisito, o artefato é versionado e documentado no histórico do repositório (documentos/requisitos/), mantendo rastreabilidade entre o código e os documentos.
