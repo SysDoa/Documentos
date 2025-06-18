@@ -98,7 +98,7 @@ O processo de desenvolvimento de artefatos de requisitos estabelece as fases em 
 
 ## Atividades 
 
-A classificação das atividades é essencial para garantir o controle e a rastreabilidade das mudanças realizadas ao longo do desenvolvimento do sistema. Cada tarefa é categorizada conforme o tipo de evolução aplicada no código-fonte (evolutiva, corretiva ou adaptativa) e documentada através de issues e commits padronizados. Com isso, essa abordagem permite manter o alinhamento entre os requisitos e o software entregue, promovendo a qualidade e a transparência no ciclo de vida do projeto.
+As atividades representam as tarefas realizadas durante o desenvolvimento do sistema, como correções, melhorias ou novas funcionalidades. Neste contexto, a classificação das atividades permite controlar e rastrear as mudanças feitas no código, relacionando cada uma aos requisitos do projeto. Dessa forma, a categorização evolutiva em conjunto com a padronização de issues e rastreabilidade commits, torna possível a garantia entre o que foi planejado e o que foi implementado, promovendo qualidade e transparência no processo.
 
 ### Classificação das Atividade Conforme a Evolução de Código
 
