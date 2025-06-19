@@ -117,9 +117,12 @@ Cada atividade do projeto é classificada conforme sua natureza, o que ajuda a i
 
 As issues são usadas para planejar, distribuir e acompanhar as atividades do projeto. Elas estão localizadas no **[_Project (projeto)_](https://github.com/orgs/SysDoa/projects/1/views/1)** desta organização e cada uma deve conter informações completas para garantir entendimento e rastreabilidade. Neste contexto, o modelo adotado de issue/atividade segue o consecutivo padrão abaixo:
 
-- **Identificador:** número de identificação de cada issue. É gerado automaticamente.
-- **Título:** curto, claro e descritivo (ex: "Criar componente de listagem de doadores").
-- **Descrição:** estruturada como uma história de usuário, no formato **Como** [papel], **Quero** [ação], **Para** [finalidade]. Além disso, também referenciado os **Requisitos Funcionais (RF)** e **Requisitos Não Funcioanis (RNF)**.
+- **Identificador:** número de identificação de cada issue. É gerado automaticamente;
+- **Título:** curto, descrevendo o que deve ser feito e referenciando o repositório para a sua construção;
+- **Descrição:** estruturada com:
+    - **História de Usuário**:  uma história de usuário, no formato **Como** [papel] **Quero** [ação], **Para** [finalidade].
+    - **Requisitos Associados**: associação de requisitos na atividade, que podem ser **Requisitos Funcionais (RF)** e **Requisitos Não Funcioanis (RNF)**;
+    - **Complemento**: campo opcional com informações extras para orientar o realizador da tarefa.
 - **Prioridade (Priority):** nível de urgência classificadas em:
     - **P0:** crítica e bloqueia outras funcionalidades;
     - **P1:** importante, mas não bloqueia outras funcionalidades;
@@ -129,7 +132,6 @@ As issues são usadas para planejar, distribuir e acompanhar as atividades do pr
     - **Corretiva (Corrective):** corrige erros, falhas de lógica ou validações que impedem o funcionamento adequado;
     - **Adaptativa (Adaptive):** altera o sistema para se adaptar a mudanças externas.
 - **Estimativa (Estimate):** tempo estimado para a execução (em dias).
-- **Rótulos (Labels):** identificadores como bug, development, design, planning, etc.
 - **Tamanho (Size):** complexidade da tarefa:
     - **XS:** ajuste simples (ex: correção de texto);
     - **S:** alteração pequena (ex: adicionar campo);
@@ -138,7 +140,8 @@ As issues são usadas para planejar, distribuir e acompanhar as atividades do pr
     - **XL:** atividade complexa ou com pesquisa/investigação.
 - **Data de Início (Start Date) e Data de Fim (End Date):** para controle de tempo real de execução.
 - **Interação (Iteration):** a qual sprint/interação a tarefa pertence (deve durar entre 15 a 30 dias).
-- **Responsável (Assignees):** membro(s) atribuídos para executar a tarefa.
+- **Responsável (Assignees):** membro(s) atribuídos para executar a tarefa;
+- **Repositório (Repository)**: repositório associado a issue.
 
 ## Mecanismos de Garantia das Atividades e Rastreabilidade
 
