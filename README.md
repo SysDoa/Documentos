@@ -93,11 +93,11 @@ Para garantir rastreabilidade e facilitar a validação dos requisitos ao longo 
 
 O processo de desenvolvimento de artefatos de requisitos estabelece as fases em que os requisitos do sistema são criados, revisados e atualizados ao longo do projeto. Essa definição garante a rastreabilidade e alinhamento contínuo entre as necessidades do sistema e sua implementação. Veja na tabela baixo mais detalhes de cada fase aplicada.
 
-| **Fase** | **Descrição** | **Momento** |**Resultados** | **Rastreabilidade** |
-|----------|---------------|-------------|---------------|---------------------|
-| Criação | Documentação inicial dos requisitos do sistema com base no levantamento com stakeholders | Início de cada interação do projeto | requisitos funcionais e não funcionais criados com padrão definido | Sempre referenciando o commit com o prefixo feat e a identificação do requisito. Exemplos: "feat (RFxxx): ...", "feat (RNFxxx): ..." | 
-| Revisão | Correção de erros ou ambiguidades nos requisitos existentes | Após testes, validações ou feedbacks internos | Ajustes nos textos ou regras dos requisitos |  Sempre referenciando o commit com o prefixo fix e a identificação do requisito. Exemplos: "fix (RFxxx): ...", "fix (RNFxxx): ..." | 
-| Atualização | Modificações nos requisitos para refletir novas funcionalidades, melhorias ou mudanças externas | A cada nova demanda ou mudança de escopo | Versões novas dos requisitos funcionais ou não funcionais | Sempre referenciando o commit com o prefixo refactor e a identificação do requisito. Exemplos: "refactor (RFxxx): ...", "refactor (RNFxxx): ..." | 
+| **Fase**    | **Descrição**                                                                                   | **Momento**                                   | **Resultados**                                                     | **Rastreabilidade**                                                                                                                              |
+| ----------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Criação     | Documentação inicial dos requisitos do sistema com base no levantamento com stakeholders        | Início de cada interação do projeto           | requisitos funcionais e não funcionais criados com padrão definido | Sempre referenciando o commit com o prefixo feat e a identificação do requisito. Exemplos: "feat (RFxxx): ...", "feat (RNFxxx): ..."             |
+| Revisão     | Correção de erros ou ambiguidades nos requisitos existentes                                     | Após testes, validações ou feedbacks internos | Ajustes nos textos ou regras dos requisitos                        | Sempre referenciando o commit com o prefixo fix e a identificação do requisito. Exemplos: "fix (RFxxx): ...", "fix (RNFxxx): ..."                |
+| Atualização | Modificações nos requisitos para refletir novas funcionalidades, melhorias ou mudanças externas | A cada nova demanda ou mudança de escopo      | Versões novas dos requisitos funcionais ou não funcionais          | Sempre referenciando o commit com o prefixo refactor e a identificação do requisito. Exemplos: "refactor (RFxxx): ...", "refactor (RNFxxx): ..." |
 
 ## Atividades 
 
@@ -107,11 +107,11 @@ As atividades representam as tarefas realizadas durante o desenvolvimento do sis
 
 Cada atividade do projeto é classificada conforme sua natureza, o que ajuda a identificar o tipo de evolução do sistema e manter a rastreabilidade com os requisitos. Os tipos são:
 
-| **Tipo de Evolução** | **Descrição** | **Momento** |**Prefixo do Commit** | **Rastreabilidade** |
-|----------------------|---------------|-------------|------------------------------|---------------------|
-| Evolutiva | Adiciona funcionalidades novas ou melhorias planejadas | Quando a funcionalidade já estava prevista na interação | feat | Sempre referenciando o commit com o prefixo feat e a identificação da issue. Exemplo: "feat Frontend #01: ..." | 
-| Corretiva | Corrige erros, falhas de lógica ou validações que impedem o funcionamento adequado | Quando é necessário consertar algo que foi implementado incorretamente ou contém bug | fix | Sempre referenciando o commit com o prefixo fix e a identificação da issue. Exemplo: "fix Backend #02: ..."| 
-| Adaptativa | Altera o sistema para se adaptar a mudanças externas | Quando há necessidade de ajustes técnicos que não alteram a lógica funcional | refactor | Sempre referenciando o commit com o prefixo refactor e a identificação da issue. Exemplo: "refactor Frontend #03: ..." | 
+| **Tipo de Evolução** | **Descrição**                                                                      | **Momento**                                                                          | **Prefixo do Commit** | **Rastreabilidade**                                                                                                    |
+| -------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Evolutiva            | Adiciona funcionalidades novas ou melhorias planejadas                             | Quando a funcionalidade já estava prevista na interação                              | feat                  | Sempre referenciando o commit com o prefixo feat e a identificação da issue. Exemplo: "feat Frontend #01: ..."         |
+| Corretiva            | Corrige erros, falhas de lógica ou validações que impedem o funcionamento adequado | Quando é necessário consertar algo que foi implementado incorretamente ou contém bug | fix                   | Sempre referenciando o commit com o prefixo fix e a identificação da issue. Exemplo: "fix Backend #02: ..."            |
+| Adaptativa           | Altera o sistema para se adaptar a mudanças externas                               | Quando há necessidade de ajustes técnicos que não alteram a lógica funcional         | refactor              | Sempre referenciando o commit com o prefixo refactor e a identificação da issue. Exemplo: "refactor Frontend #03: ..." |
 
 ### Estrutura Padrão das Atividades/Issues
 
@@ -155,3 +155,36 @@ Para assegurar que toda atividade esteja corretamente vinculada aos requisitos e
     - **Tipo de evolução realizada;**
 - **Revisão de código obrigatória:** antes da aprovação de qualquer PR, um membro do grupo verifica se a atividade está relacionada a um requisito documentado e classificada corretamente;
 - **Versionamento dos requisitos:** a cada mudança significativa em um requisito, o artefato é versionado e documentado no histórico do repositório (documentos/requisitos/), mantendo rastreabilidade entre o código e os documentos.
+
+## Controle de Mudanças de Código
+
+O controle de mudanças é um processo estruturado para gerenciar modificações no código-fonte de um projeto, garantindo estabilidade, rastreabilidade e qualidade. Ele define como as alterações são desenvolvidas, testadas e promovidas até a produção, minimizando riscos e falhas. Dessa forma, utilizamos Git como sistema de controle de versão distribuído e GitHub como plataforma para gerenciamento de repositórios, revisão de código e colaboração entre desenvolvedores.
+
+### Fluxo de linhas:
+
+- **Branches das issues**:
+    - Linhas responsáveis pelo de desenvolvimento;
+    - A branch deve começar com o prefixo "feat/", depois o nome da funcionalidade que será tratada. Exemplo: feat/cadasto-lote-candidato;
+    - As issues são criadas a partir da main, caso seja a primeira a ser criada, ou a partir de outra branch já testada, caso possua outras branches que podem ser aproveitadas;  
+    - Cada issue terá sua própria branch para desenvolvimento;
+    - Após a implementação, deve-se abrir um Pull Request para a branch "dev";
+    
+- **Homologação**:
+    - Linha responsável por validar as branches criadas antes de ser envida para a produção;
+    - Caso todas as branches criadas sejam validadas com sucesso nesta linha, haverá um Pull Request para a linha de produção;
+    - Caso exista algum erro ao realizar a validação de alguma branch enviada para essa linha, serão criadas branches de correção até que tudo esteja validado com sucesso.
+
+- **Produção**:
+    - Linha responsável por receber códigos validados pela branch de homologação e por subir o sistema para o servidor de produção automaticamente;
+    - Se trata da linha chamada "main";
+    - Caso exista algum erro no sistema em produção, será feita a restauração do "commit" anterior, caso exista versões antigas, e serão criadas branches de correção.
+    
+- **Branches das hotfix/correções de erro:**
+    - Linha responsável pela correção de erros verificada na branch de homologação ou produção;
+    - A branch deve começar com o prefixo "hotfix/", depois o nome da funcionalidade que será tratada. Exemplo: hotfix/validacao-imc-candidato;
+    - Se um erro for identificado nas validações da linha "dev" ou na "main", uma nova branch de hotfix será criada a partir dela;
+    - Cada correção será implementada, testada e, se aprovada, integrada novamente à dev, assim como nas branches de issues.
+
+### Diagrama de Fluxo:
+
+![Diagrama do Fluxo de Mudanças](https://drive.google.com/file/d/10F_x_UNg4z94Rfa6SmKzNPWAePtDZvw6/view)
