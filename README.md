@@ -187,4 +187,6 @@ O controle de mudanças é um processo estruturado para gerenciar modificações
 
 ### Diagrama de Fluxo:
 
-![Diagrama do Fluxo de Mudanças](https://drive.google.com/file/d/10F_x_UNg4z94Rfa6SmKzNPWAePtDZvw6/view)
+O fluxo ilustrado abaixo demonstrando as linhas de desenvolvimento (branches das issues), homologação, produção e hotfix, além das ações corretivas quando alterações são feitas indevidamente na branch principal (main). Esse diagrama reforça a importância de seguir o processo para garantir a qualidade e integridade do código.
+
+[![Fluxo de Mudanças.png](https://i.postimg.cc/FKn2wNHj/Fluxo-de-mudan-as-1.png)](https://postimg.cc/3ymSvMpR)
