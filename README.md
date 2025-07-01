@@ -52,7 +52,7 @@ Para garantir rastreabilidade e facilitar a validação dos requisitos ao longo 
     - **Identificador:** código único que permite identificar o requisito de forma rastreável;
     - **Caso de Uso:** nome objetivo da funcionalidade que representa o comportamento esperado do sistema;
     - **Descrição:** explica de forma clara o que o sistema deve fazer e qual o objetivo da funcionalidade, geralmente com o foco no usuário final e no propósito do requisito;
-    - **Prioridade:** grau de importância da característica funcional para o sistema, normalmente definidas como **_Alta_**, **_Média_** e **_Baixa_**;
+    - **Impacto:** grau de importância da característica funcional para o sistema, normalmente definidas como **_Alta_**, **_Média_** e **_Baixa_**;
     - **Atores:** papeis de usuários ou sistemas externos que interagem com a funcionalidade;
     - **Pré-condições:** condições que precisam ser verdadeiras ou existentes antes do início da execução da funcionalidade.
     - **Pós-condições:** Estado esperado do sistema após a execução bem-sucedida da funcionalidade;
@@ -66,15 +66,13 @@ Para garantir rastreabilidade e facilitar a validação dos requisitos ao longo 
         - **Tipo:** tipo de dado;
         - **Valor Obrigatório:** se o campo é ou não obrigatório ser preenchido;
         - **Restrições:** validações ou limitações; 
-    - **Observações Extras:** informações adicionais relevantes que não se enquadram nos campos anteriores;
-    - **Histórico de Alterações:** registro de implementações, atualizações ou correções com **Alteração**, **Motivo** e **Data**.
-
+    - **Observações Extras:** informações adicionais relevantes que não se enquadram nos campos anteriores.
 
 - **Requisitos não funcionais** terão estrutura simples com identificador, prioridade e categoria, focando em restrições e qualidades do sistema. Dessa forma, o modelo definido deve conter os campos conforme a ordem seguinte:
 
     - **Identificador:** código único que permite identificar o requisito de forma rastreável;
     - **Descrição:** explica a qualidade, restrição ou condição que o sistema deve cumprir, sem estar diretamente relacionado a uma funcionalidade específica.
-    - **Prioridade:** grau de importância da característica não funcional para o sistema, normalmente definidas como **_Alta_**, **_Média_** e **_Baixa_**;
+    - **Impacto:** grau de importância da característica não funcional para o sistema, normalmente definidas como **_Alta_**, **_Média_** e **_Baixa_**;
     - **Categoria:** classificação do requisito não funcional com base em seu foco, como:
         - **Segurança:** proteção de dados sensíveis;
         - **Capacidade:** armazenamento e processamento necessários;
@@ -86,8 +84,7 @@ Para garantir rastreabilidade e facilitar a validação dos requisitos ao longo 
         - **Desempenho:** tempo de resposta adequado;
         - **Conformidade:** atendimento a normas legais;
         - **Ambiental:** adaptação ao ambiente físico.
-    - **Observações Extras:** informações adicionais relevantes que não se enquadram nos campos anteriores;
-    - **Histórico de Alterações:** registro de implementações, atualizações ou correções com **Alteração**, **Motivo** e **Data**.
+    - **Observações Extras:** informações adicionais relevantes que não se enquadram nos campos anteriores.
 
 ## Processo de Desenvolvimento de Artefatos de Requisitos
 
