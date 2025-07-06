@@ -159,7 +159,7 @@ O controle de mudanças é um processo estruturado para gerenciar modificações
 ### Fluxo de linhas:
 
 - **Branches das issues**:
-    - Linhas responsáveis pelo de desenvolvimento;
+    - Linhas responsáveis pelo de desenvolvimento, criada a partir da branch "dev";
     - A branch deve começar com o prefixo "feat/", depois o nome da funcionalidade que será tratada. Exemplo: feat/cadasto-lote-candidato;
     - As issues são criadas a partir da main, caso seja a primeira a ser criada, ou a partir de outra branch já testada, caso possua outras branches que podem ser aproveitadas;  
     - Cada issue terá sua própria branch para desenvolvimento;
@@ -167,7 +167,8 @@ O controle de mudanças é um processo estruturado para gerenciar modificações
     
 - **Homologação**:
     - Linha responsável por validar as branches criadas antes de ser envida para a produção;
-    - Caso todas as branches criadas sejam validadas com sucesso nesta linha, haverá um Pull Request para a linha de produção;
+    - Linha criada a partir da branch "main";
+    - Caso todas as branches criadas sejam validadas com sucesso nesta linha, haverá um Pull Request para a linha de produção, ou seja, para a branch "main";
     - Caso exista algum erro ao realizar a validação de alguma branch enviada para essa linha, serão criadas branches de correção até que tudo esteja validado com sucesso.
 
 - **Produção**:
@@ -183,6 +184,6 @@ O controle de mudanças é um processo estruturado para gerenciar modificações
 
 ### Diagrama de Fluxo:
 
-O fluxo ilustrado abaixo demonstrando as linhas de desenvolvimento (branches das issues), homologação, produção e hotfix, além das ações corretivas quando alterações são feitas indevidamente na branch principal (main). Esse diagrama reforça a importância de seguir o processo para garantir a qualidade e integridade do código.
+O fluxo ilustrado abaixo demonstrando as linhas de desenvolvimento (branches das issues, representadas por "feat"), homologação ("dev"), produção ("main") e correções ("hotfix"). Esse diagrama reforça a importância de seguir o processo para garantir a qualidade e integridade do código.
 
-[![Fluxo de Mudanças.png](https://i.postimg.cc/FKn2wNHj/Fluxo-de-mudan-as-1.png)](https://postimg.cc/3ymSvMpR)
+[![Fluxo de Mudanças](https://i.postimg.cc/26zB50dN/Fluxo-de-mudan-as-2.png)](https://postimg.cc/CZQKPH6c)
