@@ -150,8 +150,7 @@ Para assegurar que toda atividade esteja corretamente vinculada aos requisitos e
     - **Link para a issue correspondente;**
     - **Descrição do requisito atendido;**
     - **Tipo de evolução realizada;**
-- **Revisão de código obrigatória:** antes da aprovação de qualquer PR, um membro do grupo verifica se a atividade está relacionada a um requisito documentado e classificada corretamente;
-- **Versionamento dos requisitos:** a cada mudança significativa em um requisito, o artefato é versionado e documentado no histórico do repositório (documentos/requisitos/), mantendo rastreabilidade entre o código e os documentos.
+- **Revisão de código obrigatória:** antes da aprovação de qualquer PR, um membro do grupo verifica se a atividade está relacionada a um requisito documentado e classificada corretamente.
 
 ## Controle de Mudanças de Código
 
