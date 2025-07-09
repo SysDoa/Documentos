@@ -96,6 +96,47 @@ O processo de desenvolvimento de artefatos de requisitos estabelece as fases em 
 | Revisão     | Correção de erros ou ambiguidades nos requisitos existentes                                     | Após testes, validações ou feedbacks internos | Ajustes nos textos ou regras dos requisitos                        | Sempre referenciando o commit com o prefixo fix e a identificação do requisito. Exemplos: "fix (RFxxx): ...", "fix (RNFxxx): ..."                |
 | Atualização | Modificações nos requisitos para refletir novas funcionalidades, melhorias ou mudanças externas | A cada nova demanda ou mudança de escopo      | Versões novas dos requisitos funcionais ou não funcionais          | Sempre referenciando o commit com o prefixo refactor e a identificação do requisito. Exemplos: "refactor (RFxxx): ...", "refactor (RNFxxx): ..." |
 
+
+## Processo de Desenvolvimento de Software
+
+O projeto tenta seguir diretrizes do Processo Unificado Racional (RUP – Rational Unified Process), adotando um ciclo de vida interativo e incremental.
+
+### Fases 
+
+O RUP é dividido em quatro fases: concepção, elaboração, construção e transição. Conheça abaixo detalhes de cada fase do modelo de processo adotado neste projeto.
+
+#### Fase de Concepção
+
+A fase de concepção é estabelecer um business case para o sistema. Você deve identificar todas as entidades externas (pessoas e sistemas) que vão interagir com o sistema e definir as interações. Então, você deve usar essas informações para avaliar a contribuição do sistema para o negócio. Se essa contribuição for pequena, então o projeto poderá ser cancelado depois dessa fase. [Sommerville (2011, p. 34)](https://www.facom.ufu.br/~william/Disciplinas%202018-2/BSI-GSI030-EngenhariaSoftware/Livro/engenhariaSoftwareSommerville.pdf)
+
+#### Fase de Elaboração
+
+As metas da fase de elaboração são desenvolver uma compreensão do problema dominante, estabelecer um framework da arquitetura para o sistema, desenvolver o plano do projeto e identificar os maiores riscos do projeto. No fim dessa fase, você deve ter um modelo de requisitos para o sistema, que pode ser um conjunto de casos de uso da UML, uma descrição da arquitetura ou um plano de desenvolvimento do software. [Sommerville (2011, p. 34)](https://www.facom.ufu.br/~william/Disciplinas%202018-2/BSI-GSI030-EngenhariaSoftware/Livro/engenhariaSoftwareSommerville.pdf)
+
+#### Fase de Construção
+
+A fase de construção envolve projeto, programação e testes do sistema. Durante essa fase, as partes do sistema são desenvolvidas em paralelo e integradas. Na conclusão dessa fase, você deve ter um sistema de software já funcionando, bem como a documentação associada pronta para ser entregue aos usuários. [Sommerville (2011, p. 34)](https://www.facom.ufu.br/~william/Disciplinas%202018-2/BSI-GSI030-EngenhariaSoftware/Livro/engenhariaSoftwareSommerville.pdf)
+
+#### Fase de Transição
+
+A fase final do RUP implica transferência do sistema da comunidade de desenvolvimento para a comunidade de usuários e em seu funcionamento em um ambiente real. Isso é ignorado na maioria dos modelos de processo de software, mas é, de fato, uma atividade cara e, às vezes, problemática. Na conclusão dessa fase, você deve ter um sistema de software documentado e funcionando corretamente em seu ambiente operacional. [Sommerville (2011, p. 34)](https://www.facom.ufu.br/~william/Disciplinas%202018-2/BSI-GSI030-EngenhariaSoftware/Livro/engenhariaSoftwareSommerville.pdf)
+
+### Matriz de Atividades
+
+A seguir, apresenta-se uma matriz que relaciona as fases do RUP com os principais artefatos de entrada e saída, ações executadas e os papéis responsáveis por cada etapa. Essa estrutura contribui para a rastreabilidade do processo de desenvolvimento de software, tornando mais claro quem faz o quê, quando e com base em quais artefatos.
+
+| **Fase**   | **Artefato de Entrada** | **Ação**    | **Artefato de Saída**         | **Papel Responsável**                |
+| ---------- | ----------------------- | ----------- | ----------------------------- | ------------------------------------ |
+| Concepção  | Contexto                | Definir     | Escopo                        |  Product Owner                 |
+| Concepção  | Escopo                  | Especificar | Documento de Requisitos (PRD) |Development Team              |
+| Elaboração | PRD                     | Escrever    | Histórias de Usuário          | Product Owner                        |
+| Elaboração | Histórias de Usuário    | Planejar    | Backlog do Produto            | Scrum Master         |
+| Construção | Backlog do Produto      | Desenvolver | Produto Incrementado          | Development Team                       |
+| Construção | Produto Incrementado    | Testar      | Produto Ajustado              | Development Team                        |
+| Transição  | Produto Ajustado        | Implantar   | Produto Finalizado            | Development Team  
+| Transição  | Produto Finalizado      | Avaliar     | Documento de Feedback         | Product Owner               |
+
+
 ## Atividades 
 
 As atividades representam as tarefas realizadas durante o desenvolvimento do sistema, como correções, melhorias ou novas funcionalidades. Neste contexto, a classificação das atividades permite controlar e rastrear as mudanças feitas no código, relacionando cada uma aos requisitos do projeto. Dessa forma, a categorização evolutiva em conjunto com a padronização de issues e rastreabilidade commits, torna possível a garantia entre o que foi planejado e o que foi implementado, promovendo qualidade e transparência no processo.
